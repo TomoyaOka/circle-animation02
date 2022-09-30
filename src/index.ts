@@ -70,14 +70,15 @@ function _ballMove(): void {
   let [x04, y04]: number[] = _timeInit(animationSetting.interval, animationSetting.speed / 1.6);
   let [x05, y05]: number[] = _timeInit(animationSetting.interval, animationSetting.speed / 1.8);
   let [x06, y06]: number[] = _timeInit(animationSetting.interval, animationSetting.speed / 2.0);
-  let [x07, y07]: number[] = _timeInit(animationSetting.interval, animationSetting.speed / 2.2);
 
   ballElement[0].style.transform = `translate(calc(${x05}px * 1.2),calc(${y05}px * 1.2))`;
-  ballElement[1].style.transform = `translate(calc(${x}px),calc(${y02}px)`;
+  ballElement[1].style.transform = `translate(calc(${x03}px),calc(${y}px)`;
   ballElement[2].style.transform = `translate(calc(${x02}px * 0.8),calc(${y02}px * 0.8))`;
-  ballElement[3].style.transform = `translate(calc(${x}px * 0.6),calc(${y03}px * 0.6))`;
+  ballElement[3].style.transform = `translate(calc(${x04}px * 0.6),calc(${y03}px * 0.6))`;
   ballElement[4].style.transform = `translate(calc(${x}px * 0.4),calc(${y06}px * 0.4))`;
-  ballElement[5].style.transform = `translate(calc(${x07}px * 0.2),calc(${y07}px * 0.2))`;
+  ballElement[5].style.transform = `translate(calc(${x06}px * 0.2),calc(${y04}px * 0.2))`;
 
   requestAnimationFrame(_ballMove);
 }
+
+export {};
